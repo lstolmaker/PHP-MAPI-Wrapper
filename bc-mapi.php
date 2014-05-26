@@ -517,7 +517,7 @@ class BCMAPI
 
 		if(isset($file))
 		{
-			$request['file'] = '@' . $file;
+			$request['file'] = new CurlFile($file);
 		}
 
 		return (string)$this->putData($request)->result;
