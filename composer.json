@@ -10,8 +10,4 @@
         "brightcove"
     ],
     "homepage": "http://opensource.brightcove.com/project/PHP-MAPI-Wrapper/",
-    "autoload": {
-        "classmap": [
-            "./"
-        ]
     }
