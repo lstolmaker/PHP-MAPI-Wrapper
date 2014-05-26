@@ -1,13 +1,22 @@
 {
-    "name": "lstolmaker/php-mapi-wrapper",
-    "description": "This project provides a starting point for integrating the Brightcove Media API into your application. It provides simple ways to interact with the API, as well as a long list of helper functions",
-    "type": "sdk",
-    "version": "2.0.5",
-    "keywords": [
-        "ovp",
-        "movie",
-        "api",
-        "brightcove"
+    "name": "brightcove/mapi",
+    "type": "library",
+    "description": "Brightcove Media API for PHP",
+    "keywords": ["Brightcove","video"],
+    "homepage": "https://github.com/lstolmaker/PHP-MAPI-Wrapper",
+    "authors": [
+        {
+            "name": "Logan Stolmaker",
+            "email": "logan@chromaplexdesigns.com",
+            "homepage": "http://chromaplexdesigns.com",
+            "role": "Developer"
+        }
     ],
-    "homepage": "http://opensource.brightcove.com/project/PHP-MAPI-Wrapper/"
+    "require": {
+        "php": ">=5.2.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "classmap": ["bc-mapi-cache.php", "bc-mapi.php"]
     }
+}
